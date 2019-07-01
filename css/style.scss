@@ -48,7 +48,6 @@ header {
     letter-spacing: 0.1rem;
     font-size: 2rem;
     font-weight: 600;
-    // margin-left: 3rem;
   }
   & ul {
     display: flex;
@@ -71,7 +70,6 @@ header {
 }
 .right {
   display: flex;
-  // justify-content: end;
   text-align: right;
   & .search {
     transition: all 0.5s;
@@ -204,7 +202,6 @@ section {
     display: flex;
     flex-direction: column;
     height: 100%;
-    // align-items: center;
     & .rel-movie {
       width: 79%;
       & i {
@@ -229,7 +226,6 @@ section {
     & .links,
     h1 {
       width: 75%;
-      // padding: 2rem 0.5rem;
       text-align: center;
     }
     & h1 {
