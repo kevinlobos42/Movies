@@ -1,0 +1,90 @@
+.container {
+  max-width: 1100px;
+  &-long {
+    max-width: 100vw;
+    display: flex;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.accent {
+  color: $accent-color;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lead {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 2.5;
+}
+.movie-info {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  line-height: 2;
+}
+i {
+  cursor: pointer;
+}
+.m-a {
+  margin: auto;
+}
+.scroll-hide {
+  margin-top: 1rem;
+  overflow: auto;
+  height: 320px;
+  width: 100%;
+  &::-webkit-scrollbar {
+    background: transparent;
+    display: none;
+    border-radius: 3rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3rem;
+  }
+}
+.sub-title {
+  margin-bottom: 1rem;
+}
+a i.current-movie {
+  color: $accent-color;
+}
+.card {
+  background: $main-black;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 3rem;
+  height: 650px;
+}
+.text-center {
+  text-align: center;
+}
+.movie-poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 450px;
+  }
+}
+.scrollable-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    background: $main-black;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $light-purple;
+    border-radius: 3rem;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Teko&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5fb082315.js"></script>
+    <title>Movies</title>
+  </head>
+  <body>
+    <img class = 'background-img' src="./img/spider-man--far-from-home.png"/>
+    <header>
+      <div class="container left">
+          <div class="logo">Film<span class="accent">oo</span>n</span></div>
+        <ul>
+          <li class="selected"> <a href ="index.html">Home</a></li>
+          <li><a href = "movies.html">Movies</a></li>
+          <li><a href = "#" onclick = "window.location = 'myList.html'">My List</a></li>
+          <li><a href = "about.html">About</a></li>
+          <li><a href = "contact.html">Contact</a></li>
+        </ul>
+        <div class="account">
+          <a href="myList.html"><i class="fas fa-user"></i></a> 
+        </div>
+      </div>
+        
+    </header>
+    <section class="container-long">
+      <div id="featured-movie">
+        <div class="movie">
+          <div class="movie-title">Spider-Man: <br>Far From Home</div>
+          <div class="sub-title">Coming soon &nbsp;|&nbsp; Tuesday, June 2nd</div>
+            <div class="buttons">
+              <a href="https://youtube.com" class="trailer btn-accent uppercase"><i class="fas fa-play"></i> &nbsp; Watch Trailer</a>
+              <a href="https://youtube.com" class="trailer btn-white uppercase"> <span class="accent"><i class="fas fa-plus"></i></span> &nbsp;  add to list</a>
+            </div>
+          </div>
+        <div class="about-movie">
+          <div class="sec">
+            <h1 class="uppercase">category</h1>
+            <p>Fantasy, Sci-Fi</p>
+          </div>
+          <div class="sec">
+            <h1 class="uppercase">Storyline</h1>
+           <p>Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever</p>
+          </div>
+          <div class="sec">
+            <h1 class="uppercase">Director / Writer</h1>
+            <p>Director: John Watts</p>
+            <p>Writers: Steve Ditko, Stan Lee, Chris McKenna, Erik Sommers</p>
+          </div>
+          
+          <div class="sec">
+            <h1 class="uppercase">Stars</h1>
+            <p>Tom Holland, Angourie Rice, Samuel L. Jackson, Zendaya, Jon Favreau, Jake Gyllenhaal, Marisa Tomei...</p>
+          </div>
+        </div>
+      </div>
+      <div id="related">
+        
+      
+        <div id="other-movies">
+          <h2 class="sub-title">Related Movies</h2>
+          <div class="rel-movie">
+            <h2 class="lead"><i class="fas fa-ticket-alt"></i> &nbsp; <span>Avengers: &nbsp; Endgame</span></h2>
+            <p class="movie-info">After Thanos wipes out half of the universe's population, it's up to the remaining Avengers to save the day...</p>
+          </div>
+          <div class="rel-movie">
+              <h2 class="lead"><i class="fas fa-ticket-alt"></i> &nbsp; <span>Spider-Man: &nbsp; Homecoming</span></h2>
+              <p class="movie-info">Peter Parker is just an ordinary high school boy, but, he has a secret, he's Spider-Man! Can he balance his social life with his super life?</p>
+          </div>
+          <div class="rel-movie">
+              <h2 class="lead"><i class="fas fa-ticket-alt"></i> &nbsp; <span>Spider-Man: &nbsp; Into the spider-verse</span></h2>
+              <p class="movie-info">Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from other dimensions to stop a threat for all realities.</p>
+          </div>
+        </div>
+        <div class="other-featured-movies">
+            <h1>Other <span class="accent">Featured</span> Films</h1>
+            <div class="links">
+              <a><i class="fas fa-circle current-movie"id = "btn-1"></i></a>
+              <a ><i class="fas fa-circle" id = "btn-2"></i></a>
+              <a ><i class="fas fa-circle" id = "btn-3"></i></a>
+              <a ><i class="fas fa-circle " id = "btn-4"></i></a>
+            </div>
+            <div class="scroll-hide" id="scroll-div">
+              <div class="sub-movie" id="MIB">
+                <h3 class="sub-movie-title">
+                </h3>
+                <p class="movie-date" ></p>
+              </div>
+              <div class="sub-movie" id="TS4">
+                <h3 class="sub-movie-title">
+                </h3>
+                <p class="movie-date"></p>
+              </div>
+              <div class="sub-movie" id="rocketman">
+                <h3 class="sub-movie-title">
+                </h3>
+                <p class="movie-date"></p>
+              </div>
+              <div class="sub-movie" id="chucky">
+                <h3 class="sub-movie-title">
+                </h3>
+                <p class="movie-date"></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+  </body>
+</html>

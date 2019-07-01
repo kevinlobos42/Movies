@@ -1,0 +1,209 @@
+@import "vars";
+@import "utilities";
+.container {
+  margin: auto;
+}
+.card {
+  border-radius: 0;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  padding-bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  border-bottom: none;
+}
+.plot-card {
+  padding-left: 5.5rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 250px;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  background: $main-black;
+  justify-content: space-around;
+  border-top: none;
+
+  .flex {
+    width: 90%;
+    height: 100%;
+  }
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  li {
+    margin: 0;
+    padding: 1.5rem 0;
+  }
+  div a {
+    padding: 1rem;
+    background: $light-purple;
+    transition: all 0.3s;
+    margin: 0 1rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background: $main-purple;
+    }
+  }
+}
+#my-List {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 400px;
+    height: 700px;
+    border-radius: 0.5rem;
+    margin: 1.5rem auto;
+    padding-bottom: 2rem;
+    h5 {
+      font-size: 1.4rem;
+      margin: 1rem;
+    }
+    & .btn {
+      width: 70%;
+      padding: 1rem 0rem;
+      margin: 0.7rem auto;
+      background: white;
+      color: black;
+      transition: all 0.3s;
+      &-primary {
+        background: $accent-color;
+        color: white;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.width-100 {
+  width: 100%;
+  z-index: 1;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.4;
+}
+#movies-bg {
+  width: 35%;
+  margin: auto;
+  z-index: 1;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 60%;
+  margin: 3rem auto;
+  padding: 1.5rem 5rem;
+  background: rgba($color: $main-black, $alpha: 0.5);
+
+  justify-content: space-between;
+  align-items: center;
+  & hr {
+    width: 100%;
+  }
+  p {
+    line-height: 1.4;
+  }
+  &-contact {
+    width: 50%;
+    height: 86%;
+    background: rgba($color: $main-black, $alpha: 0.5);
+    margin: 1rem auto;
+    margin-bottom: 0;
+    border-radius: 0.6rem;
+    border: solid 2px $light-purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    hr {
+      width: 80%;
+      border-color: $light-purple;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 85%;
+      width: 60%;
+      margin: 0rem auto;
+      input {
+        padding: 0.75rem 0.75rem;
+        border: none;
+        width: 100%;
+        border-radius: 0.3rem;
+        background: $light-purple;
+        outline: none;
+        color: white;
+        transition: all 0.3s;
+        font-size: 1.2rem;
+        &:focus {
+          background: white;
+          transform: scale(1.1);
+          color: #333;
+          &::placeholder {
+            color: #555;
+          }
+        }
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+      label {
+        font-size: 1.1rem;
+      }
+      textarea {
+        padding: 0.75rem 0.75rem;
+        width: 100%;
+        background: $light-purple;
+        border-radius: 0.3rem;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+        font-family: "Montserrat", sans-serif;
+        &:focus {
+          background: white;
+          transform: scale(1.05);
+          color: #333;
+          &::placeholder {
+            color: #555;
+          }
+        }
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+      input[name="submit"] {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.3rem;
+        background: $accent-color;
+        color: white;
+        border: none;
+        border-radius: 0.4rem;
+        margin: 1.2rem 0;
+        transition: 0.3s all;
+        &:hover {
+          background: $main-purple;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
