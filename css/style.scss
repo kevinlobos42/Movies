@@ -42,6 +42,9 @@ header {
   align-items: center;
   max-width: 87%;
   min-width: 87%;
+  .hamburger {
+    display: none;
+  }
 
   .logo {
     font-family: "Teko", sans-serif;

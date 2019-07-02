@@ -180,6 +180,10 @@ header {
   min-width: 87%;
 }
 
+.left .hamburger {
+  display: none;
+}
+
 .left .logo {
   font-family: "Teko", sans-serif;
   letter-spacing: 0.1rem;
