@@ -112,6 +112,7 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     height: 45%;
+    width: 95%;
     padding-bottom: 20px;
     grid-column-gap: 1rem;
   }
