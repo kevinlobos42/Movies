@@ -1,0 +1,101 @@
+.background-img {
+  width: 80%;
+  right: -0%;
+  top: 10%;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.left .logo {
+  font-size: 1.5rem;
+}
+
+.left ul {
+  margin: 1rem 0;
+}
+
+.left ul li {
+  padding: 1.5rem 0.5rem;
+}
+
+.left ul li a {
+  font-size: 0.8rem;
+}
+
+.container-long #featured-movie .movie {
+  margin-left: 3rem;
+}
+
+.container-long #featured-movie .movie .movie-title {
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+.container-long #featured-movie .movie .sub-title {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.container-long #featured-movie .movie .buttons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 55%;
+}
+
+.container-long #featured-movie .movie .buttons .btn-white {
+  width: 100%;
+  margin-top: 0.7rem;
+}
+
+.container-long #featured-movie .movie .buttons .btn-accent {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.container-long #featured-movie .about-movie {
+  height: 40%;
+  width: 90vw;
+  grid-column-gap: 0.5rem;
+  padding-left: 24px;
+}
+
+.container-long #featured-movie .about-movie .sec h1 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.container-long #featured-movie .about-movie .sec p {
+  font-size: 0.8rem;
+}
+
+.container-long #related {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container-long {
+    width: 100vw;
+    height: 100vh;
+  }
+  .container-long #featured-movie {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
