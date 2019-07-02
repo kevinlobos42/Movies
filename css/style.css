@@ -9,6 +9,10 @@
   display: flex;
 }
 
+p {
+  z-index: 0;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -185,6 +189,7 @@ header {
 }
 
 .left .logo {
+  cursor: pointer;
   font-family: "Teko", sans-serif;
   letter-spacing: 0.1rem;
   font-size: 2rem;
@@ -215,63 +220,6 @@ header {
 
 .left ul .selected a {
   opacity: 1;
-}
-
-.right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right;
-}
-
-.right .search {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.right .search input {
-  border: none;
-  outline: none;
-  background: transparent;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.right .search input:focus ~ .search {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.right .search:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.right .account {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #ccc;
-  padding: 0.5rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.right .account:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 
 section {
@@ -314,7 +262,7 @@ section {
 
 #featured-movie .movie .sub-title {
   font-size: 1rem;
-  opacity: 0.8;
+  color: #d9d9d9;
   padding-bottom: 4rem;
 }
 
@@ -384,7 +332,7 @@ section {
 
 #featured-movie .about-movie .sec p {
   font-size: 0.9rem;
-  opacity: 0.6;
+  color: #d9d9d9;
 }
 
 #related {

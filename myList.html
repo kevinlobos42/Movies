@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/b5fb082315.js"></script>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:1100px)">
     <style>
     body{
       overflow: auto;
@@ -22,8 +23,13 @@
   <body class="scrollable-body">
     <header>
       <div class="container left">
-          <div class="logo">Film<span class="accent">oo</span>n</span></div>
-        <ul>
+          <div class="hamburger">
+              <i class="fas fa-bars "></i>
+            </div>
+          <div class="logo"> <a href="index.html">
+            Film<span class="accent">oo</span>n</span>
+          </a></div>
+        <ul class="nav-Links">
           <li> <a href ="index.html">Home</a></li>
           <li><a href = "movies.html">Movies</a></li>
         
@@ -52,6 +58,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script src="js/api.js"></script>
+  <script src="js/hamburger.js"></script>
   <script>
   genPage()
   </script>

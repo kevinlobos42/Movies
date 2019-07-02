@@ -110,7 +110,7 @@
   margin: 3rem auto;
   padding: 1.5rem 5rem;
   background: rgba($color: $main-black, $alpha: 0.5);
-
+  z-index: 0;
   justify-content: space-between;
   align-items: center;
   & hr {
@@ -118,6 +118,9 @@
   }
   p {
     line-height: 1.4;
+    color: white;
+    opacity: 1;
+    z-index: 0;
   }
   &-contact {
     width: 50%;

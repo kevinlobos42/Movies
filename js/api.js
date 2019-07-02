@@ -48,7 +48,7 @@ function getMovie() {
       let movie = response.data;
 
       let output = `
-      <div class = "card">
+      <div class = "card mobile-card">
         <div>
           <img src = "${movie.Poster}">
         </div>
@@ -68,7 +68,7 @@ function getMovie() {
       <div class = "plot-card">
             <div class = "flex">
               <h3>Plot</h3>
-              ${movie.Plot}
+              <p>${movie.Plot}</p>
               <hr>
               <div>
               <a href= "https://imdb.com/title/${

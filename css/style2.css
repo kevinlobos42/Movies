@@ -9,6 +9,10 @@
   display: flex;
 }
 
+p {
+  z-index: 0;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -279,6 +283,7 @@ a i.current-movie {
   margin: 3rem auto;
   padding: 1.5rem 5rem;
   background: rgba(6, 6, 18, 0.5);
+  z-index: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -293,6 +298,9 @@ a i.current-movie {
 
 .box p {
   line-height: 1.4;
+  color: white;
+  opacity: 1;
+  z-index: 0;
 }
 
 .box-contact {
