@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-height: 414px) {
+@media (max-height: 420px) {
   .background-img {
     width: 35%;
     right: 20%;
@@ -81,6 +81,54 @@
       height: auto;
       width: 90%;
       box-sizing: border-box;
+    }
+  }
+  .box-contact {
+    height: 750px;
+    // display: none;
+  }
+  .box {
+    margin: 10vh auto;
+  }
+  .plot-card {
+    padding: 1rem 2rem;
+    .flex {
+      margin: auto;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        margin: 0 0.5rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .mobile-card {
+    .flex {
+      li {
+        padding: 0.75rem 0;
+      }
+    }
+  }
+}
+@media (max-height: 360px) {
+  .plot-card {
+    div {
+      a {
+        margin: 0;
+      }
+    }
+  }
+  .mobile-card {
+    .flex {
+      li {
+        padding: 0.5rem 0;
+      }
     }
   }
 }

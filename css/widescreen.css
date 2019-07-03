@@ -48,7 +48,7 @@
   margin: 2.5rem auto;
 }
 
-@media (max-height: 414px) {
+@media (max-height: 420px) {
   .background-img {
     width: 35%;
     right: 20%;
@@ -104,6 +104,45 @@
     width: 90%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .box-contact {
+    height: 750px;
+  }
+  .box {
+    margin: 10vh auto;
+  }
+  .plot-card {
+    padding: 1rem 2rem;
+  }
+  .plot-card .flex {
+    margin: auto;
+  }
+  .plot-card div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plot-card div a {
+    margin: 0 0.5rem;
+  }
+  .plot-card div a:last-child {
+    margin-right: 0;
+  }
+  .mobile-card .flex li {
+    padding: 0.75rem 0;
+  }
+}
+
+@media (max-height: 360px) {
+  .plot-card div a {
+    margin: 0;
+  }
+  .mobile-card .flex li {
+    padding: 0.5rem 0;
   }
 }
 /*# sourceMappingURL=widescreen.css.map */
