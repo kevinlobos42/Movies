@@ -1,0 +1,93 @@
+.background-img {
+  right: 10%;
+}
+
+#featured-movie {
+  width: 100%;
+}
+
+#featured-movie .movie {
+  height: 55%;
+}
+
+#featured-movie .movie .movie-title {
+  font-size: 3.3rem;
+  margin-top: 1rem;
+}
+
+#featured-movie .movie .sub-title {
+  padding-bottom: 1.5rem;
+}
+
+#featured-movie .movie .buttons {
+  width: 40%;
+}
+
+#featured-movie .about-movie {
+  height: 45%;
+  width: 90%;
+}
+
+#related {
+  display: none;
+}
+
+@media (max-height: 414px) {
+  .background-img {
+    width: 35%;
+    right: 20%;
+    top: 35%;
+  }
+  .container-long #featured-movie {
+    width: 100%;
+  }
+  .container-long #featured-movie .movie {
+    height: 55%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 3rem;
+    margin-top: 1rem;
+  }
+  .container-long #featured-movie .movie .movie-title {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+  }
+  .container-long #featured-movie .movie .sub-title {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+  }
+  .container-long #featured-movie .movie .buttons {
+    height: 20%;
+    width: 80%;
+    margin-top: 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 55%;
+  }
+  .container-long #featured-movie .movie .buttons a.btn-white,
+  .container-long #featured-movie .movie .buttons a.btn-accent {
+    padding: 1rem 0.5rem;
+    width: 40%;
+    margin: 0;
+  }
+  .container-long #featured-movie .about-movie {
+    height: auto;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+/*# sourceMappingURL=widescreen.css.map */
