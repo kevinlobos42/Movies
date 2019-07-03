@@ -54,6 +54,23 @@
     right: 20%;
     top: 35%;
   }
+  .movie-search {
+    margin-top: 10vh;
+  }
+  .movie-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #search-text {
+    width: 90%;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
   .container-long #featured-movie {
     width: 100%;
   }

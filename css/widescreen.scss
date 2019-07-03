@@ -45,6 +45,18 @@
     right: 20%;
     top: 35%;
   }
+  .movie-search {
+    margin-top: 10vh;
+  }
+  .movie-form {
+    display: flex;
+    justify-content: center;
+  }
+  #search-text {
+    width: 90%;
+    text-align: center;
+    justify-self: center;
+  }
   .container-long #featured-movie {
     width: 100%;
     .movie {
