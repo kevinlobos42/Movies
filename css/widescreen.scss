@@ -21,8 +21,22 @@
     width: 90%;
   }
 }
+.container {
+  #movie {
+    padding: 3rem;
+  }
+}
+#my-List {
+  padding-bottom: 2rem;
+}
 #related {
   display: none;
+}
+.box {
+  height: auto;
+  &-contact {
+    margin: 2.5rem auto;
+  }
 }
 
 @media (max-height: 414px) {

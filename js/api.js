@@ -145,7 +145,9 @@ function genPage() {
           console.log(err);
         });
     } else {
-      $("#my-List").html("");
+      $("#my-List").html(
+        "<div style = 'height:70vh; width:100vw; display:flex;justify-content:center; align-items:center'><h1 class = 'movie-title' style = 'text-align:center; font-weight:normal;'>No Results Found</h1></div>"
+      );
     }
   }
 }
